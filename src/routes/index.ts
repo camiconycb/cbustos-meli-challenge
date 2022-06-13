@@ -33,6 +33,14 @@ export default () => {
   });
 
   router.get('/stats', async (ctx: Context) => {
+    try {
+      await services.stats(ctx);
+      return ctx.body;
+    } catch (error: any) {
+      ctx.status = CONSTS.HTTP.CODES.INTERNAL_SERVER_ERROR;
+      ctx.body = error.message;
+      return ctx.body;
+    }
   });
   return router;
 };
