@@ -5,8 +5,8 @@ import { Service } from '../interfaces/service';
 import MutantSchema from '../models/Mutant';
 import HumanSchema from '../models/Human';
 import { createDna, findDna } from '../helpers/dbHelpers';
-import isMutantResponse from '../utils/isHumantResponse';
-import isHumanResponse from '../utils/isMutantResponse';
+import isHumanResponse from '../utils/isHumantResponse';
+import isMutantResponse from '../utils/isMutantResponse';
 import CONSTS from '../config/constants';
 import { responseType } from '../types/response';
 

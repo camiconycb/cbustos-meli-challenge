@@ -11,5 +11,5 @@
 
 ### 🌍 Application execution
 
-1. Start the application with Docker Compose: `docker-compose up -d`
+1. Start the application with Docker Compose: `docker-compose up -d --build`
 2. Go to [http://localhost:3000](http://localhost:3000)
