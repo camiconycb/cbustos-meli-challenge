@@ -32,7 +32,7 @@ An .env file must be configured before the initialization of the database contai
 ### 🐳 Needed tools
 
 1. [Install Docker](https://www.docker.com/get-started) 
-2. Clone this project: 
+2. Clone this project: `git clone https://github.com/camiconycb/cbustos-meli-challenge.git`
 3. Move to the project folder: cd cbustos-meli-challenge
 
 ### 🌍 Application execution
