@@ -28,7 +28,8 @@ Exponer un servicio extra “/stats” que devuelva un Json con las estadística
 verificaciones de ADN: {“count_mutant_dna”:40, “count_human_dna”:100: “ratio”:0.4}
 
 # 🚀 Environment setup
-An .env file must be configured before the initialization of the database container and the API
+An .env file must be configured before the initialization of the database container and the API<br>
+`Agregar archivo .env en la raiz y agregar las variables de entorno enviadas al correo`
 ### 🐳 Needed tools
 
 1. [Install Docker](https://www.docker.com/get-started) 
@@ -46,6 +47,7 @@ An .env file must be configured before the initialization of the database contai
 4. GET /stats
 
 ###  ✅ Run test
+`Los test se corren en local para esto es necesario tener instalado node versión: 16.15.1 y npm versión: 8.11.0`
 1. npm install
 2. npm run test
 3. npm run coverage
