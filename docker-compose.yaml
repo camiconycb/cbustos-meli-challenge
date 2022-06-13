@@ -1,0 +1,29 @@
+version: "3.7"
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${USER_MONGO}
+      MONGO_INITDB_ROOT_PASSWORD: ${PASSWORD_MONGO}
+    volumes:
+    - type: volume
+      source: db
+      target: /data/db
+    ports:
+      - ${DB_PORT}:${DB_PORT}
+
+  api_mutant:
+    container_name: api_mutant
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    env_file: .env
+    ports:
+      - '${DEFAULT_APP_PORT}:${DEFAULT_APP_PORT}'
+    depends_on: 
+      - mongo
+
+volumes:
+  db:

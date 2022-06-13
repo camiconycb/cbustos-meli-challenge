@@ -1,0 +1,14 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+const ERROR = {
+  INTERNAL_SERVER_ERROR: 'Internal Server Error',
+  INVALID_INPUT: 'Invalid Input',
+  MISSING_ENV_VARIABLES: 'Missing environment variables'
+};
+var _default = ERROR;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJFUlJPUiIsIklOVEVSTkFMX1NFUlZFUl9FUlJPUiIsIklOVkFMSURfSU5QVVQiLCJNSVNTSU5HX0VOVl9WQVJJQUJMRVMiXSwic291cmNlcyI6WyIuLi8uLi9zcmMvY29uZmlnL2Vycm9ycy50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBFUlJPUiA9IHtcbiAgSU5URVJOQUxfU0VSVkVSX0VSUk9SOiAnSW50ZXJuYWwgU2VydmVyIEVycm9yJyxcbiAgSU5WQUxJRF9JTlBVVDogJ0ludmFsaWQgSW5wdXQnLFxuICBNSVNTSU5HX0VOVl9WQVJJQUJMRVM6ICdNaXNzaW5nIGVudmlyb25tZW50IHZhcmlhYmxlcycsXG59O1xuXG5leHBvcnQgZGVmYXVsdCBFUlJPUjtcbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUEsTUFBTUEsS0FBSyxHQUFHO0VBQ1pDLHFCQUFxQixFQUFFLHVCQURYO0VBRVpDLGFBQWEsRUFBRSxlQUZIO0VBR1pDLHFCQUFxQixFQUFFO0FBSFgsQ0FBZDtlQU1lSCxLIn0=

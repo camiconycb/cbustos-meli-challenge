@@ -1,0 +1,60 @@
+{
+  "name": "cbustos-meli-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+
+  "scripts": {
+    "clean": "rm -rf dist",
+    "dev": "npm run lint && npm run build && npx nodemon ./src/index.ts",
+    "babel": "babel src -d dist --copy-files",
+    "lint": "eslint '*/**/*.{js,ts}'",
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc",
+    "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline"
+  },
+  "author": "Camila Bustos",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camiconycb/cbustos-meli-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camiconycb/cbustos-meli-challenge/issues"
+  },
+  "homepage": "https://github.com/camiconycb/cbustos-meli-challenge#readme",
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "@types/koa__router": "^8.0.11",
+    "dotenv": "^16.0.1",
+    "koa": "^2.13.4",
+    "koa-body": "^4.1.0",
+    "koa-json": "^2.0.2",
+    "koa-router": "^10.1.1",
+    "mongoose": "^6.3.6",
+    "typescript": "^4.7.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.16.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/node": "^17.0.41",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^16.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jest": "^23.6.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.4.0"
+  }
+}
