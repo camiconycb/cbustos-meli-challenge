@@ -1,6 +1,6 @@
 import mutant from '../src/helpers/getIsMutant';
 
-describe('POST /mutant', () => { 
+describe('get is Mutant', () => { 
   it('should respond false', () => {
     const humanDna = ['ATGTCC', 'ACGTGC', 'TACGAT', 'CGCCGG', 'CCACTC', 'TCCACC']
     const isMutant = mutant(humanDna);
