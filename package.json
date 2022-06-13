@@ -11,15 +11,15 @@
     "lint": "eslint '*/**/*.{js,ts}'",
     "build": "npm run build:types && npm run build:js",
     "build:types": "tsc",
-    "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline"
+    "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "author": "Camila Bustos",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/camiconycb/cbustos-meli-challenge.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/camiconycb/cbustos-meli-challenge/issues"
   },
@@ -48,6 +48,9 @@
     "@types/node": "^17.0.41",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
+    "@types/jest": "^27.4.1",
+    "@swc/jest": "^0.2.20",
+    "@swc/core": "^1.2.172",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^16.1.0",
     "eslint-config-prettier": "^8.3.0",
@@ -55,6 +58,7 @@
     "eslint-plugin-jest": "^23.6.0",
     "eslint-plugin-prettier": "^4.0.0",
     "nodemon": "^2.0.16",
-    "ts-node": "^10.4.0"
+    "ts-node": "^10.4.0",
+    "jest":"^28.0.1"
   }
 }
